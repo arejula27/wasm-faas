@@ -16,5 +16,7 @@ func (s *Server) RegisterRoutes() http.Handler {
 
 	e.GET("/health", s.healthHandler)
 
+	e.GET("/add", s.AddHandler)
+
 	return e
 }
