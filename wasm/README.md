@@ -21,7 +21,10 @@ the minimal command to build a `%.wasm` binary.
 ```bash
 tinygo build -o wasm/add.wasm -target=wasi wasm/add.go
 ```
-
+To test the endpoint use
+```bash
+curl "http://localhost:1323/add?a=3&b=5"
+```
 ### Notes
 
 * Many other languages compile to (target) Wasm including AssemblyScript, C,
