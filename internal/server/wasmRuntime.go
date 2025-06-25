@@ -33,7 +33,7 @@ func (wrtm *WasmRuntime) RunAdd(a, b uint64) uint64 {
 	if err != nil {
 		panic(err)
 	}
-	filepath := strings.Split(cwd, "faas/")[0] + "faas/wasm/add.wasm"
+	filepath := strings.Split(cwd, "faas/")[0] + "/wasm/add.wasm"
 
 	//load the wasm file
 	addWasm, err := os.ReadFile(filepath)
